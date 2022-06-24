@@ -1,0 +1,1129 @@
+@-webkit-keyframes rotatex {
+  to {
+    transform: rotatey(360deg);
+  }
+}
+@keyframes rotatex {
+  to {
+    transform: rotatey(360deg);
+  }
+}
+@-webkit-keyframes rotate-1 {
+  to {
+    top: 18%;
+    transform: translatez(20px);
+  }
+}
+@keyframes rotate-1 {
+  to {
+    top: 18%;
+    transform: translatez(20px);
+  }
+}
+@-webkit-keyframes rotate-2 {
+  to {
+    left: 18%;
+    transform: translatez(20px);
+  }
+}
+@keyframes rotate-2 {
+  to {
+    left: 18%;
+    transform: translatez(20px);
+  }
+}
+@-webkit-keyframes rotate-3 {
+  to {
+    left: 82%;
+    transform: translatez(20px);
+  }
+}
+@keyframes rotate-3 {
+  to {
+    left: 82%;
+    transform: translatez(20px);
+  }
+}
+@-webkit-keyframes rotate-4 {
+  to {
+    top: 82%;
+    transform: translatez(20px);
+  }
+}
+@keyframes rotate-4 {
+  to {
+    top: 82%;
+    transform: translatez(20px);
+  }
+}
+@-webkit-keyframes rotate-5 {
+  to {
+    left: 66%;
+    top: 77%;
+    transform: translatez(20px);
+  }
+}
+@keyframes rotate-5 {
+  to {
+    left: 66%;
+    top: 77%;
+    transform: translatez(20px);
+  }
+}
+@-webkit-keyframes rotate-6 {
+  to {
+    top: 66%;
+    left: 77%;
+    transform: translatez(20px);
+  }
+}
+@keyframes rotate-6 {
+  to {
+    top: 66%;
+    left: 77%;
+    transform: translatez(20px);
+  }
+}
+@-webkit-keyframes rotate-7 {
+  to {
+    top: 34%;
+    left: 78%;
+    transform: translatez(20px);
+  }
+}
+@keyframes rotate-7 {
+  to {
+    top: 34%;
+    left: 78%;
+    transform: translatez(20px);
+  }
+}
+@-webkit-keyframes rotate-8 {
+  to {
+    top: 34%;
+    left: 25%;
+    transform: translatez(20px);
+  }
+}
+@keyframes rotate-8 {
+  to {
+    top: 34%;
+    left: 25%;
+    transform: translatez(20px);
+  }
+}
+@-webkit-keyframes rotate-9 {
+  to {
+    left: 65%;
+    top: 24%;
+    transform: translatez(20px);
+  }
+}
+@keyframes rotate-9 {
+  to {
+    left: 65%;
+    top: 24%;
+    transform: translatez(20px);
+  }
+}
+@-webkit-keyframes rotate-10 {
+  to {
+    left: 38%;
+    top: 24%;
+    transform: translatez(20px);
+  }
+}
+@keyframes rotate-10 {
+  to {
+    left: 38%;
+    top: 24%;
+    transform: translatez(20px);
+  }
+}
+@-webkit-keyframes rotate-11 {
+  to {
+    left: 40%;
+    top: 77%;
+    transform: translatez(20px);
+  }
+}
+@keyframes rotate-11 {
+  to {
+    left: 40%;
+    top: 77%;
+    transform: translatez(20px);
+  }
+}
+@-webkit-keyframes rotate-12 {
+  to {
+    top: 66%;
+    left: 29%;
+    transform: translatez(20px);
+  }
+}
+@keyframes rotate-12 {
+  to {
+    top: 66%;
+    left: 29%;
+    transform: translatez(20px);
+  }
+}
+.circle {
+  display: flex;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: red;
+  animation: rotatex infinite linear 10s reverse;
+}
+
+body {
+  height: 100vh;
+}
+body main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  margin: 100px auto;
+  transform-style: preserve-3d;
+  -webkit-animation: rotatex infinite linear 10s;
+          animation: rotatex infinite linear 10s;
+}
+body main > div:nth-of-type(1) {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+body main > div:nth-of-type(1) > div {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  transform-style: preserve-3d;
+}
+body main > div:nth-of-type(1) > div > span {
+  background-color: #55c5ff;
+}
+body main > div:nth-of-type(1) > div:nth-of-type(1) {
+  -webkit-animation: rotate-1 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-1 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(2) {
+  -webkit-animation: rotate-2 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-2 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(3) {
+  -webkit-animation: rotate-3 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-3 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(4) {
+  -webkit-animation: rotate-4 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-4 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(5) {
+  -webkit-animation: rotate-5 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-5 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(6) {
+  -webkit-animation: rotate-6 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-6 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(7) {
+  -webkit-animation: rotate-7 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-7 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(8) {
+  -webkit-animation: rotate-8 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-8 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(9) {
+  -webkit-animation: rotate-9 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-9 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(10) {
+  -webkit-animation: rotate-10 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-10 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(11) {
+  -webkit-animation: rotate-11 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-11 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(12) {
+  -webkit-animation: rotate-12 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-12 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(1) {
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(2) {
+  top: 50%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(3) {
+  top: 50%;
+  left: 97%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(4) {
+  top: 97%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(5) {
+  top: 90%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(6) {
+  top: 73%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(7) {
+  top: 27%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(8) {
+  top: 27%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(9) {
+  top: 10%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(10) {
+  top: 10%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(11) {
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(12) {
+  top: 73%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(1) > div:nth-of-type(13) {
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(2) {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translatez(60px);
+}
+body main > div:nth-of-type(2) > div {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  transform-style: preserve-3d;
+}
+body main > div:nth-of-type(2) > div > span {
+  background-color: #55c5ff;
+}
+body main > div:nth-of-type(2) > div:nth-of-type(1) {
+  -webkit-animation: rotate-1 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-1 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(2) {
+  -webkit-animation: rotate-2 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-2 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(3) {
+  -webkit-animation: rotate-3 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-3 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(4) {
+  -webkit-animation: rotate-4 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-4 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(5) {
+  -webkit-animation: rotate-5 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-5 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(6) {
+  -webkit-animation: rotate-6 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-6 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(7) {
+  -webkit-animation: rotate-7 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-7 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(8) {
+  -webkit-animation: rotate-8 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-8 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(9) {
+  -webkit-animation: rotate-9 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-9 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(10) {
+  -webkit-animation: rotate-10 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-10 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(11) {
+  -webkit-animation: rotate-11 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-11 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(12) {
+  -webkit-animation: rotate-12 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-12 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(1) {
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(2) {
+  top: 50%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(3) {
+  top: 50%;
+  left: 97%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(4) {
+  top: 97%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(5) {
+  top: 90%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(6) {
+  top: 73%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(7) {
+  top: 27%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(8) {
+  top: 27%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(9) {
+  top: 10%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(10) {
+  top: 10%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(11) {
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(12) {
+  top: 73%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(2) > div:nth-of-type(13) {
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(3) {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translatez(-60px);
+}
+body main > div:nth-of-type(3) > div {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  transform-style: preserve-3d;
+}
+body main > div:nth-of-type(3) > div > span {
+  background-color: #55c5ff;
+}
+body main > div:nth-of-type(3) > div:nth-of-type(1) {
+  -webkit-animation: rotate-1 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-1 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(2) {
+  -webkit-animation: rotate-2 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-2 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(3) {
+  -webkit-animation: rotate-3 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-3 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(4) {
+  -webkit-animation: rotate-4 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-4 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(5) {
+  -webkit-animation: rotate-5 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-5 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(6) {
+  -webkit-animation: rotate-6 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-6 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(7) {
+  -webkit-animation: rotate-7 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-7 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(8) {
+  -webkit-animation: rotate-8 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-8 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(9) {
+  -webkit-animation: rotate-9 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-9 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(10) {
+  -webkit-animation: rotate-10 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-10 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(11) {
+  -webkit-animation: rotate-11 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-11 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(12) {
+  -webkit-animation: rotate-12 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-12 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(1) {
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(2) {
+  top: 50%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(3) {
+  top: 50%;
+  left: 97%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(4) {
+  top: 97%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(5) {
+  top: 90%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(6) {
+  top: 73%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(7) {
+  top: 27%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(8) {
+  top: 27%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(9) {
+  top: 10%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(10) {
+  top: 10%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(11) {
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(12) {
+  top: 73%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(3) > div:nth-of-type(13) {
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(4) {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translatez(120px);
+}
+body main > div:nth-of-type(4) > div {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  transform-style: preserve-3d;
+}
+body main > div:nth-of-type(4) > div > span {
+  background-image: linear-gradient(to right, #55c5ff, #ff5200);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(1) {
+  -webkit-animation: rotate-1 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-1 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(2) {
+  -webkit-animation: rotate-2 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-2 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(3) {
+  -webkit-animation: rotate-3 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-3 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(4) {
+  -webkit-animation: rotate-4 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-4 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(5) {
+  -webkit-animation: rotate-5 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-5 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(6) {
+  -webkit-animation: rotate-6 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-6 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(7) {
+  -webkit-animation: rotate-7 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-7 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(8) {
+  -webkit-animation: rotate-8 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-8 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(9) {
+  -webkit-animation: rotate-9 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-9 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(10) {
+  -webkit-animation: rotate-10 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-10 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(11) {
+  -webkit-animation: rotate-11 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-11 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(12) {
+  -webkit-animation: rotate-12 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-12 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(1) {
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(2) {
+  top: 50%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(3) {
+  top: 50%;
+  left: 97%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(4) {
+  top: 97%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(5) {
+  top: 90%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(6) {
+  top: 73%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(7) {
+  top: 27%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(8) {
+  top: 27%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(9) {
+  top: 10%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(10) {
+  top: 10%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(11) {
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(12) {
+  top: 73%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(4) > div:nth-of-type(13) {
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(5) {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translatez(-120px);
+}
+body main > div:nth-of-type(5) > div {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  transform-style: preserve-3d;
+}
+body main > div:nth-of-type(5) > div > span {
+  background-image: linear-gradient(to right, #ff22dd, #55c5ff);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(1) {
+  -webkit-animation: rotate-1 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-1 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(2) {
+  -webkit-animation: rotate-2 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-2 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(3) {
+  -webkit-animation: rotate-3 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-3 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(4) {
+  -webkit-animation: rotate-4 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-4 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(5) {
+  -webkit-animation: rotate-5 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-5 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(6) {
+  -webkit-animation: rotate-6 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-6 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(7) {
+  -webkit-animation: rotate-7 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-7 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(8) {
+  -webkit-animation: rotate-8 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-8 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(9) {
+  -webkit-animation: rotate-9 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-9 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(10) {
+  -webkit-animation: rotate-10 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-10 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(11) {
+  -webkit-animation: rotate-11 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-11 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(12) {
+  -webkit-animation: rotate-12 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-12 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(1) {
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(2) {
+  top: 50%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(3) {
+  top: 50%;
+  left: 97%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(4) {
+  top: 97%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(5) {
+  top: 90%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(6) {
+  top: 73%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(7) {
+  top: 27%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(8) {
+  top: 27%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(9) {
+  top: 10%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(10) {
+  top: 10%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(11) {
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(12) {
+  top: 73%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(5) > div:nth-of-type(13) {
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(6) {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translatez(-180px);
+}
+body main > div:nth-of-type(6) > div {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  transform-style: preserve-3d;
+}
+body main > div:nth-of-type(6) > div > span {
+  background-color: #ff22dd;
+}
+body main > div:nth-of-type(6) > div:nth-of-type(1) {
+  -webkit-animation: rotate-1 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-1 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(2) {
+  -webkit-animation: rotate-2 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-2 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(3) {
+  -webkit-animation: rotate-3 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-3 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(4) {
+  -webkit-animation: rotate-4 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-4 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(5) {
+  -webkit-animation: rotate-5 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-5 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(6) {
+  -webkit-animation: rotate-6 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-6 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(7) {
+  -webkit-animation: rotate-7 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-7 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(8) {
+  -webkit-animation: rotate-8 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-8 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(9) {
+  -webkit-animation: rotate-9 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-9 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(10) {
+  -webkit-animation: rotate-10 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-10 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(11) {
+  -webkit-animation: rotate-11 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-11 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(12) {
+  -webkit-animation: rotate-12 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-12 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(1) {
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(2) {
+  top: 50%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(3) {
+  top: 50%;
+  left: 97%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(4) {
+  top: 97%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(5) {
+  top: 90%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(6) {
+  top: 73%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(7) {
+  top: 27%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(8) {
+  top: 27%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(9) {
+  top: 10%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(10) {
+  top: 10%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(11) {
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(12) {
+  top: 73%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(6) > div:nth-of-type(13) {
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(7) {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translatez(180px);
+}
+body main > div:nth-of-type(7) > div {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  transform-style: preserve-3d;
+}
+body main > div:nth-of-type(7) > div > span {
+  background-color: #ff5200;
+}
+body main > div:nth-of-type(7) > div:nth-of-type(1) {
+  -webkit-animation: rotate-1 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-1 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(2) {
+  -webkit-animation: rotate-2 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-2 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(3) {
+  -webkit-animation: rotate-3 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-3 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(4) {
+  -webkit-animation: rotate-4 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-4 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(5) {
+  -webkit-animation: rotate-5 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-5 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(6) {
+  -webkit-animation: rotate-6 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-6 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(7) {
+  -webkit-animation: rotate-7 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-7 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(8) {
+  -webkit-animation: rotate-8 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-8 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(9) {
+  -webkit-animation: rotate-9 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-9 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(10) {
+  -webkit-animation: rotate-10 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-10 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(11) {
+  -webkit-animation: rotate-11 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-11 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(12) {
+  -webkit-animation: rotate-12 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+          animation: rotate-12 infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(1) {
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(2) {
+  top: 50%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(3) {
+  top: 50%;
+  left: 97%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(4) {
+  top: 97%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(5) {
+  top: 90%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(6) {
+  top: 73%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(7) {
+  top: 27%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(8) {
+  top: 27%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(9) {
+  top: 10%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(10) {
+  top: 10%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(11) {
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(12) {
+  top: 73%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(7) > div:nth-of-type(13) {
+  top: 90%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+body main > div:nth-of-type(8) {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translatez(250px);
+}
+body main > div:nth-of-type(8) > div {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  transform-style: preserve-3d;
+}
+body main > div:nth-of-type(8) > div > span {
+  background-color: #ff5200;
+}
+body main > div:nth-of-type(9) {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translatez(-250px);
+}
+body main > div:nth-of-type(9) > div {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  transform-style: preserve-3d;
+}
+body main > div:nth-of-type(9) > div > span {
+  background-color: #ff22dd;
+}/*# sourceMappingURL=style.css.map */

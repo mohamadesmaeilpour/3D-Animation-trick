@@ -1,0 +1,900 @@
+$ani : infinite 2s alternate cubic-bezier(0.43, 0.43, 0.91, 0.37);
+
+@keyframes rotatex {
+    to {
+        transform: rotatey(360deg)
+    }
+}
+
+@keyframes rotate-1 {
+    to {
+        top: 18%;
+        transform: translatez(20px)
+    }
+}
+
+@keyframes rotate-2 {
+    to {
+        left: 18%;
+        transform: translatez(20px)
+    }
+}
+
+@keyframes rotate-3 {
+    to {
+        left: 82%;
+        transform: translatez(20px)
+    }
+}
+
+@keyframes rotate-4 {
+    to {
+        top: 82%;
+        transform: translatez(20px)
+    }
+}
+
+@keyframes rotate-5 {
+    to {
+        left: 66%;
+        top: 77%;
+        transform: translatez(20px)
+    }
+}
+
+@keyframes rotate-6 {
+    to {
+        top: 66%;
+        left: 77%;
+        transform: translatez(20px)
+    }
+}
+
+@keyframes rotate-7 {
+    to {
+        top: 34%;
+        left: 78%;
+        transform: translatez(20px);
+    }
+}
+
+@keyframes rotate-8 {
+    to {
+        top: 34%;
+        left: 25%;
+        transform: translatez(20px);
+    }
+}
+
+@keyframes rotate-9 {
+    to {
+        left: 65%;
+        top: 24%;
+        transform: translatez(20px);
+    }
+}
+
+@keyframes rotate-10 {
+    to {
+        left: 38%;
+        top: 24%;
+        transform: translatez(20px);
+    }
+}
+
+@keyframes rotate-11 {
+    to {
+        left: 40%;
+        top: 77%;
+        transform: translatez(20px);
+    }
+}
+
+@keyframes rotate-12 {
+    to {
+        top: 66%;
+        left: 29%;
+        transform: translatez(20px);
+    }
+}
+
+.circle {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+    animation: rotatex infinite linear 10s reverse;
+}
+
+body {
+    height: 100vh;
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        height: 500px;
+        position: relative;
+        margin: 100px auto;
+        transform-style: preserve-3d;
+        animation: rotatex infinite linear 10s;
+
+
+        >div {
+            &:nth-of-type(1) {
+                width: 500px;
+                height: 500px;
+                position: absolute;
+                transform-style: preserve-3d;
+
+                >div {
+                    position: absolute;
+                    width: 18px;
+                    height: 18px;
+                    transform-style: preserve-3d;
+
+                    >span {
+                        background-color: #55c5ff;
+                    }
+
+                    @for $i from 1 through 12 {
+                        &:nth-of-type(#{$i}) {
+                            animation: rotate-#{$i} $ani;
+                        }
+                    }
+
+                    &:nth-of-type(1) {
+                        top: 3%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(2) {
+                        top: 50%;
+                        left: 3%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(3) {
+                        top: 50%;
+                        left: 97%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(4) {
+                        top: 97%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(5) {
+                        top: 90%;
+                        left: 70%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(6) {
+                        top: 73%;
+                        left: 88%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(7) {
+                        top: 27%;
+                        left: 88%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(8) {
+                        top: 27%;
+                        left: 12%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(9) {
+                        top: 10%;
+                        left: 70%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(10) {
+                        top: 10%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(11) {
+                        top: 90%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(12) {
+                        top: 73%;
+                        left: 12%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(13) {
+                        top: 90%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+
+                }
+            }
+
+            &:nth-of-type(2) {
+                width: 350px;
+                height: 350px;
+                position: absolute;
+                transform-style: preserve-3d;
+                transform: translatez(60px);
+
+                >div {
+                    position: absolute;
+                    width: 18px;
+                    height: 18px;
+                    transform-style: preserve-3d;
+
+                    >span {
+                        background-color: #55c5ff;
+                    }
+
+                    @for $i from 1 through 12 {
+                        &:nth-of-type(#{$i}) {
+                            animation: rotate-#{$i} $ani;
+                        }
+                    }
+
+                    &:nth-of-type(1) {
+                        top: 3%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(2) {
+                        top: 50%;
+                        left: 3%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(3) {
+                        top: 50%;
+                        left: 97%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(4) {
+                        top: 97%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(5) {
+                        top: 90%;
+                        left: 70%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(6) {
+                        top: 73%;
+                        left: 88%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(7) {
+                        top: 27%;
+                        left: 88%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(8) {
+                        top: 27%;
+                        left: 12%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(9) {
+                        top: 10%;
+                        left: 70%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(10) {
+                        top: 10%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(11) {
+                        top: 90%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(12) {
+                        top: 73%;
+                        left: 12%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(13) {
+                        top: 90%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+
+                }
+            }
+
+            &:nth-of-type(3) {
+                width: 350px;
+                height: 350px;
+                position: absolute;
+                transform-style: preserve-3d;
+                transform: translatez(-60px);
+
+                >div {
+                    position: absolute;
+                    width: 18px;
+                    height: 18px;
+                    transform-style: preserve-3d;
+
+                    >span {
+                        background-color: #55c5ff;
+                    }
+
+                    @for $i from 1 through 12 {
+                        &:nth-of-type(#{$i}) {
+                            animation: rotate-#{$i} $ani;
+                        }
+                    }
+
+                    &:nth-of-type(1) {
+                        top: 3%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(2) {
+                        top: 50%;
+                        left: 3%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(3) {
+                        top: 50%;
+                        left: 97%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(4) {
+                        top: 97%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(5) {
+                        top: 90%;
+                        left: 70%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(6) {
+                        top: 73%;
+                        left: 88%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(7) {
+                        top: 27%;
+                        left: 88%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(8) {
+                        top: 27%;
+                        left: 12%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(9) {
+                        top: 10%;
+                        left: 70%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(10) {
+                        top: 10%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(11) {
+                        top: 90%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(12) {
+                        top: 73%;
+                        left: 12%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(13) {
+                        top: 90%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+
+                }
+            }
+
+            &:nth-of-type(4) {
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                transform-style: preserve-3d;
+                transform: translatez(120px);
+
+                >div {
+                    position: absolute;
+                    width: 18px;
+                    height: 18px;
+                    transform-style: preserve-3d;
+
+                    >span {
+                        background-image: linear-gradient(to right, #55c5ff, #ff5200);
+                    }
+
+                    @for $i from 1 through 12 {
+                        &:nth-of-type(#{$i}) {
+                            animation: rotate-#{$i} $ani;
+                        }
+                    }
+
+                    &:nth-of-type(1) {
+                        top: 3%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(2) {
+                        top: 50%;
+                        left: 3%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(3) {
+                        top: 50%;
+                        left: 97%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(4) {
+                        top: 97%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(5) {
+                        top: 90%;
+                        left: 70%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(6) {
+                        top: 73%;
+                        left: 88%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(7) {
+                        top: 27%;
+                        left: 88%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(8) {
+                        top: 27%;
+                        left: 12%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(9) {
+                        top: 10%;
+                        left: 70%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(10) {
+                        top: 10%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(11) {
+                        top: 90%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(12) {
+                        top: 73%;
+                        left: 12%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(13) {
+                        top: 90%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+
+                }
+            }
+
+            &:nth-of-type(5) {
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                transform-style: preserve-3d;
+                transform: translatez(-120px);
+
+                >div {
+                    position: absolute;
+                    width: 18px;
+                    height: 18px;
+                    transform-style: preserve-3d;
+
+                    >span {
+                        background-image: linear-gradient(to right, #ff22dd, #55c5ff);
+                    }
+
+                    @for $i from 1 through 12 {
+                        &:nth-of-type(#{$i}) {
+                            animation: rotate-#{$i} $ani;
+                        }
+                    }
+
+                    &:nth-of-type(1) {
+                        top: 3%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(2) {
+                        top: 50%;
+                        left: 3%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(3) {
+                        top: 50%;
+                        left: 97%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(4) {
+                        top: 97%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(5) {
+                        top: 90%;
+                        left: 70%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(6) {
+                        top: 73%;
+                        left: 88%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(7) {
+                        top: 27%;
+                        left: 88%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(8) {
+                        top: 27%;
+                        left: 12%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(9) {
+                        top: 10%;
+                        left: 70%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(10) {
+                        top: 10%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(11) {
+                        top: 90%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(12) {
+                        top: 73%;
+                        left: 12%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(13) {
+                        top: 90%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+
+                }
+            }
+
+            &:nth-of-type(6) {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                transform-style: preserve-3d;
+                transform: translatez(-180px);
+
+                >div {
+                    position: absolute;
+                    width: 18px;
+                    height: 18px;
+                    transform-style: preserve-3d;
+
+                    >span {
+                        background-color: #ff22dd;
+                    }
+
+                    @for $i from 1 through 12 {
+                        &:nth-of-type(#{$i}) {
+                            animation: rotate-#{$i} $ani;
+                        }
+                    }
+
+                    &:nth-of-type(1) {
+                        top: 3%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(2) {
+                        top: 50%;
+                        left: 3%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(3) {
+                        top: 50%;
+                        left: 97%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(4) {
+                        top: 97%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(5) {
+                        top: 90%;
+                        left: 70%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(6) {
+                        top: 73%;
+                        left: 88%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(7) {
+                        top: 27%;
+                        left: 88%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(8) {
+                        top: 27%;
+                        left: 12%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(9) {
+                        top: 10%;
+                        left: 70%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(10) {
+                        top: 10%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(11) {
+                        top: 90%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(12) {
+                        top: 73%;
+                        left: 12%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(13) {
+                        top: 90%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+
+                }
+            }
+
+            &:nth-of-type(7) {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                transform-style: preserve-3d;
+                transform: translatez(180px);
+
+                >div {
+                    position: absolute;
+                    width: 18px;
+                    height: 18px;
+                    transform-style: preserve-3d;
+
+                    >span {
+                        background-color: #ff5200;
+                    }
+
+                    @for $i from 1 through 12 {
+                        &:nth-of-type(#{$i}) {
+                            animation: rotate-#{$i} $ani;
+                        }
+                    }
+
+                    &:nth-of-type(1) {
+                        top: 3%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(2) {
+                        top: 50%;
+                        left: 3%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(3) {
+                        top: 50%;
+                        left: 97%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(4) {
+                        top: 97%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(5) {
+                        top: 90%;
+                        left: 70%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(6) {
+                        top: 73%;
+                        left: 88%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(7) {
+                        top: 27%;
+                        left: 88%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(8) {
+                        top: 27%;
+                        left: 12%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(9) {
+                        top: 10%;
+                        left: 70%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(10) {
+                        top: 10%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(11) {
+                        top: 90%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(12) {
+                        top: 73%;
+                        left: 12%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:nth-of-type(13) {
+                        top: 90%;
+                        left: 30%;
+                        transform: translate(-50%, -50%);
+                    }
+
+
+                }
+            }
+
+            &:nth-of-type(8) {
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                transform-style: preserve-3d;
+                transform: translatez(250px);
+
+                >div {
+                    position: absolute;
+                    width: 18px;
+                    height: 18px;
+                    transform-style: preserve-3d;
+
+                    >span {
+                        background-color: #ff5200;
+                    }
+                }
+            }
+
+            &:nth-of-type(9) {
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                transform-style: preserve-3d;
+                transform: translatez(-250px);
+
+                >div {
+                    position: absolute;
+                    width: 18px;
+                    height: 18px;
+                    transform-style: preserve-3d;
+
+                    >span {
+                        background-color: #ff22dd;
+                    }
+                }
+            }
+        }
+    }
+}
